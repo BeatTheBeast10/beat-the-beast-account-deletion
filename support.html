@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Beat the Beast – Support</title>
+<style>
+:root{--bg:#080A0C;--card:#121519;--border:#24282D;--gold:#D7A84B;--text:#F5F5F5;--muted:#9AA0A6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65}
+.wrap{width:min(920px,calc(100% - 32px));margin:0 auto;padding:48px 0 64px}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+h1{margin:0 0 10px;font-size:clamp(30px,5vw,48px);line-height:1.08}.intro{color:var(--muted);margin:0 0 28px;max-width:720px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+button,.link-button{appearance:none;border:1px solid var(--border);background:#15181C;color:var(--text);border-radius:12px;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+button.active{border-color:var(--gold);color:var(--gold)}
+.card{border:1px solid var(--border);background:var(--card);border-radius:16px;padding:20px;margin:0 0 14px}
+h2{margin:0 0 9px;font-size:18px}p{margin:0;color:#D9DCE0}a{color:var(--gold)}
+.email{display:inline-block;margin-top:12px;font-weight:800;text-decoration:none;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--border);margin-top:30px;padding-top:22px;color:var(--muted);font-size:14px}[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="eyebrow">Beat the Beast</div>
+
+<div id="de">
+<h1>Support</h1>
+<p class="intro">Du brauchst Hilfe mit Beat the Beast, möchtest ein Problem melden oder hast eine Frage zu deinem Konto? Kontaktiere uns per E-Mail.</p>
+<div class="toolbar">
+<button type="button" class="active" data-lang="de">Deutsch</button>
+<button type="button" data-lang="en">English</button>
+<a class="link-button" href="./privacy.html">Datenschutz</a>
+<a class="link-button" href="./terms.html">Nutzungsbedingungen</a>
+<a class="link-button" href="./imprint.html">Impressum</a>
+<a class="link-button" href="./">Konto löschen</a>
+</div>
+<section class="card"><h2>Kontakt</h2><p>Beschreibe dein Anliegen möglichst genau. Bei technischen Problemen helfen Angaben dazu, was passiert ist und welche Schritte zum Problem geführt haben.</p><a class="email" href="mailto:beatthebeastapp@outlook.com?subject=Beat%20the%20Beast%20Support">beatthebeastapp@outlook.com</a></section>
+<section class="card"><h2>Probleme in der App</h2><p>Du kannst Probleme auch direkt in der App unter Einstellungen → Support → Problem melden senden.</p></section>
+<section class="card"><h2>Konto & Datenschutz</h2><p>Dein Konto kannst du direkt in der App löschen. Informationen zur Kontolöschung und zum Datenschutz findest du über die Links oben.</p></section>
+</div>
+
+<div id="en" hidden>
+<h1>Support</h1>
+<p class="intro">Need help with Beat the Beast, want to report a problem, or have a question about your account? Contact us by email.</p>
+<div class="toolbar">
+<button type="button" data-lang="de">Deutsch</button>
+<button type="button" class="active" data-lang="en">English</button>
+<a class="link-button" href="./privacy.html">Privacy</a>
+<a class="link-button" href="./terms.html">Terms of Use</a>
+<a class="link-button" href="./imprint.html">Legal Notice</a>
+<a class="link-button" href="./">Delete account</a>
+</div>
+<section class="card"><h2>Contact</h2><p>Please describe your request as clearly as possible. For technical issues, it helps to include what happened and the steps that led to the problem.</p><a class="email" href="mailto:beatthebeastapp@outlook.com?subject=Beat%20the%20Beast%20Support">beatthebeastapp@outlook.com</a></section>
+<section class="card"><h2>Problems in the app</h2><p>You can also report problems directly in the app under Settings → Support → Report a problem.</p></section>
+<section class="card"><h2>Account & Privacy</h2><p>You can delete your account directly in the app. Information about account deletion and privacy is available through the links above.</p></section>
+</div>
+
+<footer>Beat the Beast · <a href="mailto:beatthebeastapp@outlook.com">beatthebeastapp@outlook.com</a></footer>
+</main>
+<script>
+const de=document.getElementById('de'),en=document.getElementById('en');
+function setLanguage(lang){const german=lang==='de';de.hidden=!german;en.hidden=german;document.documentElement.lang=lang;try{localStorage.setItem('btb-support-language',lang)}catch(_){}}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
+let initial='de';try{initial=localStorage.getItem('btb-support-language')||(navigator.language&&navigator.language.toLowerCase().startsWith('de')?'de':'en')}catch(_){}
+setLanguage(initial==='en'?'en':'de');
+</script>
+</body>
+</html>

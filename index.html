@@ -1,240 +1,265 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#080a0c">
-  <meta name="description" content="Offizielle Teilnahmebedingungen zur Beat the Beast 50-€-Challenge. Überhole das Profil cami bis zum 30. November 2026 und sichere dir bei gültiger Teilnahme 50 €.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="50-€-Challenge | Beat the Beast">
-  <meta property="og:description" content="Überhole cami bis zum 30.11.2026 um 23:59 Uhr. Hier findest du alle Regeln und Teilnahmebedingungen.">
-  <title>50-€-Challenge – Teilnahmebedingungen | Beat the Beast</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beat the Beast – Kontolöschung / Account Deletion</title>
+  <meta name="description" content="Informationen zur Löschung deines Beat-the-Beast-Kontos und deiner Daten." />
   <style>
     :root {
-      --bg: #080a0c;
-      --surface: #111519;
-      --surface-2: #171a1d;
-      --border: #292d31;
-      --gold: #d7a84b;
-      --gold-light: #f0ce7d;
-      --gold-dim: #9d762f;
-      --text: #f5f5f5;
-      --muted: #a1a5aa;
-      --line: #34302a;
-      --max: 900px;
+      --bg: #080A0C;
+      --card: #121519;
+      --border: #24282D;
+      --gold: #D7A84B;
+      --gold-dark: #9D762F;
+      --text: #F5F5F5;
+      --muted: #9AA0A6;
+      --muted-dark: #6F757C;
     }
+
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      min-width: 300px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.68;
-      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
-    body::before {
-      content: "";
-      pointer-events: none;
-      position: fixed;
-      inset: 0 0 auto;
-      height: 490px;
-      background: radial-gradient(ellipse 65% 75% at 50% -40%, rgba(215,168,75,.24), transparent 76%);
-      z-index: -1;
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
     }
-    a { color: var(--gold-light); text-underline-offset: 3px; }
-    a:hover { color: #fff; }
-    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 3px; }
-    .shell { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
-    .topbar { border-bottom: 1px solid #22262a; }
-    .topbar .shell { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-    .brand { text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 13px; }
-    .brand-mark {
-      width: 44px; height: 44px; border: 1px solid #76591f; border-radius: 12px;
-      display: inline-grid; place-items: center; font-size: 14px; letter-spacing: -1px;
-      background: linear-gradient(135deg, #2a2214, #0e1011); color: var(--gold); font-weight: 1000;
+
+    .brand {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
-    .brand-name { display: block; letter-spacing: .07em; font-size: 13px; font-weight: 900; line-height: 1.15; }
-    .brand-sub { display: block; color: var(--muted); letter-spacing: .17em; font-size: 9px; text-transform: uppercase; font-weight: 700; padding-top: 4px; }
-    .top-link { font-size: 12px; text-decoration: none; color: var(--muted); }
-    .top-link:hover { color: var(--gold-light); }
-    .hero { text-align: center; padding: 76px 0 42px; }
-    .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: .27em; text-transform: uppercase; color: var(--gold); }
-    h1 { font-size: clamp(36px, 7vw, 72px); line-height: 1.04; letter-spacing: -.045em; margin: 15px 0 16px; font-weight: 950; }
-    .hero .accent { color: var(--gold); }
-    .intro { font-size: clamp(15px, 2.1vw, 18px); color: #c7c8ca; max-width: 640px; margin: 0 auto 34px; }
-    .intro strong { color: #fff; }
-    .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 auto; max-width: 740px; }
-    .metric {
-      border: 1px solid var(--border); background: linear-gradient(150deg, #1a1c1e, #101214);
-      border-radius: 16px; padding: 19px 13px 17px; min-height: 112px;
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.1;
+      letter-spacing: -1px;
     }
-    .metric .value { color: var(--gold-light); font-size: clamp(21px, 3.9vw, 32px); font-weight: 900; line-height: 1.3; letter-spacing: -.03em; }
-    .metric .caption { font-size: 10px; font-weight: 800; color: var(--muted); letter-spacing: .09em; text-transform: uppercase; margin-top: 7px; }
-    .notice { background: #1c180f; border: 1px solid #5b4724; border-radius: 16px; margin: 18px 0 40px; padding: 18px 21px; color: #e7d9b9; font-size: 14px; }
-    .notice strong { color: #f4d791; }
-    .section-title { display: flex; align-items: center; gap: 10px; margin: 30px 0 18px; }
-    .section-title::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-    .section-title h2 { font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: .16em; color: var(--gold); margin: 0; }
-    .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
-    .rule { padding: 22px; border: 1px solid var(--border); border-radius: 17px; background: var(--surface); }
-    .rule-num { color: var(--gold); font-size: 11px; font-weight: 900; letter-spacing: .12em; }
-    .rule h3 { font-size: 17px; letter-spacing: -.02em; margin: 10px 0 7px; }
-    .rule p { margin: 0; color: #c0c4c7; font-size: 14px; }
-    .terms { border-radius: 20px; border: 1px solid var(--border); background: var(--surface); padding: 18px 30px 25px; }
-    .terms section { padding: 18px 0; border-bottom: 1px solid #272b2f; }
-    .terms section:last-child { border-bottom: none; padding-bottom: 4px; }
-    .terms h3 { font-size: 17px; margin: 0 0 9px; letter-spacing: -.01em; }
-    .terms p { margin: 8px 0; color: #c9cbcd; font-size: 14px; }
-    .terms ul { margin: 9px 0; padding-left: 21px; color: #c9cbcd; font-size: 14px; }
-    .terms li { padding: 3px 0; }
-    .terms strong { color: #fff; }
-    .terms address { font-style: normal; color: #c9cbcd; font-size: 14px; line-height: 1.7; }
-    .fine { font-size: 13px; color: #aeb0b3; }
-    footer { margin-top: 48px; padding: 29px 0 45px; border-top: 1px solid #22262a; }
-    .footer-content { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
-    footer p { margin: 0; font-size: 12px; color: var(--muted); }
-    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; font-size: 12px; }
-    .footer-links a { text-decoration: none; }
-    .updated { font-size: 12px; color: #898d93; margin: 25px 0 0; text-align: center; }
-    @media (max-width: 650px) {
-      .shell { padding: 0 17px; }
-      .topbar .shell { min-height: 68px; }
-      .hero { padding-top: 58px; }
-      .metric-grid { gap: 8px; }
-      .metric { min-height: 98px; padding: 15px 6px 12px; }
-      .metric .caption { font-size: 9px; letter-spacing: 0; }
-      .rules { grid-template-columns: 1fr; }
-      .terms { padding: 12px 18px 18px; }
-      .top-link { font-size: 11px; }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 16px 0 30px;
+      font-size: 16px;
     }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      margin: 18px 0;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font-size: 20px;
+    }
+
+    .card h3 {
+      margin: 22px 0 8px;
+      font-size: 16px;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 10px 0 0;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .contact:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 36px 0;
+    }
+
+    .note {
+      color: var(--muted-dark);
+      font-size: 13px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      display: inline-block;
+      border: 1px solid var(--gold-dark);
+      color: var(--gold);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .legal-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .legal-links a {
+      display: block;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--bg);
+      font-weight: 600;
+    }
+
+    .legal-links a:hover, .legal-links a:focus-visible {
+      border-color: var(--gold-dark);
+    }
+
+    .legal-links a.challenge {
+      color: var(--gold);
+      border-color: var(--gold-dark);
+    }
   </style>
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="shell">
-      <a class="brand" href="https://www.instagram.com/btb_roadtobeast/" aria-label="Beat the Beast auf Instagram">
-        <span class="brand-mark" aria-hidden="true">BTB</span>
-        <span><span class="brand-name">BEAT THE BEAST</span><span class="brand-sub">Road to Beast</span></span>
+  <main class="wrap">
+    <div class="brand">Beat the Beast</div>
+    <h1>Kontolöschung / Account Deletion</h1>
+    <p class="subtitle">
+      Hier findest du Informationen dazu, wie du dein Beat-the-Beast-Konto und die damit verbundenen personenbezogenen Daten löschen kannst.
+      <br><br>
+      Here you can find information on how to delete your Beat the Beast account and the personal data associated with it.
+    </p>
+
+    <section class="card">
+      <div class="pill">DEUTSCH</div>
+      <h2>Konto und Daten löschen</h2>
+
+      <p>
+        Nutzer können ihr Beat-the-Beast-Konto direkt innerhalb der App löschen.
+      </p>
+
+      <h3>So löschst du dein Konto in der App</h3>
+      <ul>
+        <li>Öffne dein Profil.</li>
+        <li>Gehe zu „Einstellungen“.</li>
+        <li>Wähle „Konto löschen“.</li>
+        <li>Bestätige die endgültige Löschung.</li>
+      </ul>
+
+      <h3>Alternativ: Löschung per E-Mail anfordern</h3>
+      <p>
+        Wenn du keinen Zugriff mehr auf die App hast, kannst du die Löschung deines Kontos auch per E-Mail anfordern.
+        Verwende möglichst die E-Mail-Adresse, mit der dein Beat-the-Beast-Konto registriert ist.
+      </p>
+
+      <a class="contact" href="mailto:beatthebeastapp@outlook.com?subject=Beat%20the%20Beast%20%E2%80%93%20Kontol%C3%B6schung">
+        beatthebeastapp@outlook.com
       </a>
-      <a class="top-link" href="#teilnahmebedingungen">Teilnahmebedingungen ↓</a>
-    </div>
-  </header>
 
-  <main class="shell">
-    <div class="hero">
-      <div class="eyebrow">Die offizielle Challenge</div>
-      <h1>BEAT <span class="accent">CAMI.</span><br>WIN <span class="accent">50 €.</span></h1>
-      <p class="intro">Du gegen <strong>cami</strong>. Ein Ziel: Erreiche bis zum Stichtag ein <strong>höheres Level</strong> in Beat the Beast. Jeder erfolgreiche Teilnehmer kann <strong>50 €</strong> erhalten.</p>
-      <div class="metric-grid" aria-label="Die Challenge auf einen Blick">
-        <div class="metric"><div class="value">50 €</div><div class="caption">pro Gewinner</div></div>
-        <div class="metric"><div class="value">cami</div><div class="caption">Zielprofil</div></div>
-        <div class="metric"><div class="value">30.11.</div><div class="caption">23:59 Uhr · 2026</div></div>
-      </div>
-    </div>
+      <h3>Welche Daten werden gelöscht?</h3>
+      <p>Bei der Kontolöschung werden grundsätzlich die mit deinem Konto verbundenen personenbezogenen Daten gelöscht, darunter insbesondere:</p>
+      <ul>
+        <li>Kontodaten und Profilinformationen</li>
+        <li>Challenge-Fortschritt und persönliche Bestleistungen</li>
+        <li>Social-Verbindungen wie Follower- und Freundschaftsdaten</li>
+        <li>hochgeladene Aktivitätsnachweise</li>
+        <li>weitere kontobezogene App-Daten</li>
+      </ul>
 
-    <div class="notice"><strong>Wichtig:</strong> Ausschlaggebend ist das am 30. November 2026 um 23:59 Uhr (deutsche Zeit) erreichte Level. Ein Gleichstand mit <strong>cami</strong> reicht nicht aus. Die Aktion ist ein leistungsbezogener Wettbewerb; es findet keine Auslosung statt.</div>
+      <h3>Welche Daten können gegebenenfalls länger gespeichert werden?</h3>
+      <p>
+        Einzelne Daten können nur dann länger gespeichert werden, wenn dafür eine gesetzliche Aufbewahrungspflicht
+        oder ein anderer zulässiger rechtlicher Grund besteht. In diesem Fall werden die Daten nur für den erforderlichen Zeitraum aufbewahrt.
+      </p>
+    </section>
 
-    <div class="section-title"><h2>So funktioniert’s</h2></div>
-    <div class="rules">
-      <article class="rule">
-        <div class="rule-num">01 / BEAST MODE</div>
-        <h3>Überhole cami</h3>
-        <p>Steige in der Beat-the-Beast-App bis spätestens 30. November 2026, 23:59 Uhr, auf ein höheres Level als das Profil <strong>cami</strong>.</p>
-      </article>
-      <article class="rule">
-        <div class="rule-num">02 / PROOF</div>
-        <h3>Lade deine Nachweise hoch</h3>
-        <p>Wenn die App für eine Challenge einen Aktivitätsnachweis verlangt, musst du diesen wie vorgesehen in der App hochladen.</p>
-      </article>
-      <article class="rule">
-        <div class="rule-num">03 / COMMUNITY</div>
-        <h3>Zeig deinen Weg</h3>
-        <p>Teile deinen Challenge-Moment in einer Instagram-Story und markiere <a href="https://www.instagram.com/btb_roadtobeast/">@btb_roadtobeast</a>. Das unterstützt die Community; die Story ist kein sportlicher Leistungsnachweis und wird für die Auszahlung nicht überprüft.</p>
-      </article>
-      <article class="rule">
-        <div class="rule-num">04 / REWARD</div>
-        <h3>50 € sichern</h3>
-        <p>Erfüllst du die sportlichen Anforderungen, erhältst du 50 €. Du kannst für die Auszahlung zwischen <strong>PayPal</strong> und <strong>Banküberweisung</strong> wählen.</p>
-      </article>
-    </div>
+    <div class="divider"></div>
 
-    <div class="section-title" id="teilnahmebedingungen"><h2>Offizielle Teilnahmebedingungen</h2></div>
-    <div class="terms">
-      <section>
-        <h3>1. Veranstalter</h3>
-        <p>Veranstalter der „Beat the Beast – 50-€-Challenge“ ist:</p>
-        <address>
-          Carmine Genovese<br>
-          Goldstraße 85<br>
-          48147 Münster<br>
-          Deutschland<br>
-          E-Mail: <a href="mailto:beatthebeastapp@outlook.com">beatthebeastapp@outlook.com</a>
-        </address>
-      </section>
-      <section>
-        <h3>2. Teilnahmeberechtigung</h3>
-        <p>Teilnehmen können natürliche Personen ab <strong>16 Jahren</strong> mit einem gültigen Beat-the-Beast-Benutzerkonto. Eine Person darf nur mit einem eigenen Konto teilnehmen; Mehrfachkonten zur Manipulation der Aktion sind nicht erlaubt.</p>
-        <p>Die Teilnahme erfordert keine gesonderte Teilnahmegebühr. Für die Nutzung der App können übliche Kosten für Endgerät und Internetverbindung entstehen. Die allgemeinen Nutzungsbedingungen von Beat the Beast gelten ergänzend.</p>
-      </section>
-      <section>
-        <h3>3. Aktionszeitraum</h3>
-        <p>Die Aktion beginnt mit der erstmaligen Veröffentlichung des offiziellen Challenge-Ankündigungsvideos von Beat the Beast. Sie endet am <strong>30. November 2026 um 23:59 Uhr (MEZ/deutsche Zeit)</strong>.</p>
-        <p>Für den Vergleich zählen die bis zu diesem Zeitpunkt serverseitig erfassten Levelstände. Erst später eingetragene oder abgeschlossene Leistungen zählen für diese Aktion nicht.</p>
-      </section>
-      <section>
-        <h3>4. Sportliche Teilnahme und Gewinnermittlung</h3>
-        <ul>
-          <li>Maßgeblich ist das in der App geführte Nutzerprofil mit dem Benutzernamen <strong>cami</strong>.</li>
-          <li>Ein Teilnehmer ist erfolgreich, wenn sein Level zum Stichtag <strong>höher</strong> ist als das Level von <strong>cami</strong> zum selben Stichtag.</li>
-          <li>Ein gleicher Levelstand genügt nicht. Die Position in der Rangliste allein ist nicht entscheidend.</li>
-          <li>Vorgeschriebene Aktivitätsnachweise müssen entsprechend den App-Vorgaben hochgeladen worden sein. Bei berechtigten Zweifeln an der Echtheit oder Richtigkeit kann der Veranstalter die betreffenden Leistungen anhand der vorhandenen Nachweise und Daten überprüfen.</li>
-          <li>Es gibt weder eine Auslosung noch eine feste Begrenzung der Zahl erfolgreicher Teilnehmer.</li>
-        </ul>
-        <p>Wird das Ziel von niemandem erreicht, erfolgt keine Auszahlung.</p>
-      </section>
-      <section>
-        <h3>5. Instagram-Story</h3>
-        <p>Im Rahmen der Aktion werden Teilnehmer dazu aufgerufen, in einer Instagram-Story zu zeigen, wie sie eine Challenge absolviert haben, und dabei <a href="https://www.instagram.com/btb_roadtobeast/">@btb_roadtobeast</a> zu markieren. Die Story dient der Sichtbarkeit der Aktion und der Community.</p>
-        <p><strong>Die Instagram-Story wird nicht als Leistungsnachweis überprüft und ist für die Feststellung eines Gewinnanspruchs nicht maßgeblich.</strong> Eine nicht sichtbare, inzwischen abgelaufene oder nicht veröffentlichte Story führt deshalb für sich genommen nicht zum Ausschluss von der Auszahlung. Entscheidend sind die in Abschnitt 4 genannten sportlichen Anforderungen.</p>
-        <p>Instagram steht mit der Durchführung und Organisation dieser Aktion in keiner Verbindung. Die Aktion wird von Instagram weder gesponsert noch unterstützt oder organisiert. Fragen zur Aktion sind an den Veranstalter zu richten, nicht an Instagram.</p>
-      </section>
-      <section>
-        <h3>6. Gewinn, Benachrichtigung und Auszahlung</h3>
-        <p>Jede Person, die die Teilnahmevoraussetzungen erfüllt und das sportliche Ziel erreicht, erhält <strong>einmalig 50,00 €</strong>. Auch bei mehreren erfolgreichen Teilnehmern gilt der Gewinn pro berechtigter Person; eine Aufteilung eines festen Gesamtbudgets findet nicht statt.</p>
-        <p>Nach Ablauf der Aktion prüft der Veranstalter die zum Stichtag vorliegenden Daten und kontaktiert erfolgreiche Teilnehmer nach Möglichkeit innerhalb von <strong>14 Tagen</strong> über die im App-Konto hinterlegte E-Mail-Adresse. Bei Fragen kann der Teilnehmer auch selbst an <a href="mailto:beatthebeastapp@outlook.com">beatthebeastapp@outlook.com</a> schreiben.</p>
-        <p>Für die Auszahlung können Gewinner zwischen <strong>PayPal</strong> und <strong>Banküberweisung</strong> wählen. Dafür werden nur die jeweils notwendigen Zahlungsdaten erfragt. Soweit für eine gewählte Zahlungsmethode Alters- oder Kontovoraussetzungen gelten, müssen diese eingehalten werden; andernfalls kann die andere angebotene Auszahlungsmethode genutzt werden. Die Auszahlung erfolgt nach Prüfung des Anspruchs und Erhalt der erforderlichen Zahlungsangaben, grundsätzlich innerhalb von <strong>30 Tagen</strong>.</p>
-      </section>
-      <section>
-        <h3>7. Fair Play und Manipulation</h3>
-        <p>Manipulierte, gefälschte oder fremde Leistungsnachweise, unzutreffende Challenge-Ergebnisse, die Nutzung unzulässiger Hilfsmittel zur Vortäuschung sportlicher Leistungen sowie die missbräuchliche Nutzung mehrerer Konten sind untersagt.</p>
-        <p>Bei nachgewiesener Manipulation kann der betroffene Teilnehmer von der Aktion ausgeschlossen werden. Weitere Konsequenzen nach den geltenden App-Nutzungsbedingungen, einschließlich einer Kontosperrung bei schwerwiegenden Verstößen, bleiben vorbehalten. Entscheidungen erfolgen auf Grundlage nachvollziehbarer Tatsachen; berechtigte Ansprüche werden nicht willkürlich ausgeschlossen.</p>
-      </section>
-      <section>
-        <h3>8. Datenschutz</h3>
-        <p>Für die Organisation und Auswertung der Aktion werden insbesondere Benutzerkennung, Levelstand, Challenge-Fortschritt, erforderliche Prüfstatusdaten und – für die Benachrichtigung – die im Benutzerkonto hinterlegte E-Mail-Adresse verarbeitet. Zur Auszahlung werden bei Gewinnern zusätzlich die dafür erforderlichen Zahlungsdaten verarbeitet.</p>
-        <p>Die Verarbeitung erfolgt zur Durchführung der Aktion und Abwicklung des Gewinnanspruchs (Art. 6 Abs. 1 lit. b DSGVO) sowie, soweit erforderlich, zur Verhinderung von Manipulationen und zur Wahrung berechtigter Interessen (Art. 6 Abs. 1 lit. f DSGVO). Gesetzliche Aufbewahrungspflichten bleiben unberührt. Zahlungsdaten werden nicht öffentlich veröffentlicht.</p>
-        <p>Für hochgeladene Aktivitätsnachweise gelten die in der <a href="https://beatthebeast10.github.io/beat-the-beast-account-deletion/privacy.html">Datenschutzerklärung von Beat the Beast</a> beschriebenen Regeln, insbesondere die grundsätzliche Löschung der Bilddateien 30 Tage nach Upload. Dokumentierter Fortschritt und Prüfstatus können unabhängig von der Bilddatei erhalten bleiben. Ein öffentliches Bekanntgeben von Gewinnernamen erfolgt nicht ohne gesonderte Grundlage.</p>
-      </section>
-      <section>
-        <h3>9. Durchführung und Kontakt</h3>
-        <p>Technische Fehler oder vorübergehende Störungen können vorkommen. Der Veranstalter bemüht sich um eine faire und nachvollziehbare Durchführung. Zwingende gesetzliche Ansprüche der Teilnehmer bleiben unberührt. Für Fragen zur Challenge und zur Auszahlung ist <a href="mailto:beatthebeastapp@outlook.com">beatthebeastapp@outlook.com</a> erreichbar.</p>
-      </section>
-    </div>
-    <p class="updated">Stand: 29. Oktober 2026 · Offizielle Teilnahmebedingungen zur einmaligen 50-€-Challenge</p>
+    <section class="card">
+      <div class="pill">ENGLISH</div>
+      <h2>Delete your account and data</h2>
+
+      <p>
+        Users can delete their Beat the Beast account directly within the app.
+      </p>
+
+      <h3>How to delete your account in the app</h3>
+      <ul>
+        <li>Open your profile.</li>
+        <li>Go to “Settings”.</li>
+        <li>Select “Delete Account”.</li>
+        <li>Confirm the final deletion.</li>
+      </ul>
+
+      <h3>Alternatively: request deletion by email</h3>
+      <p>
+        If you no longer have access to the app, you can request deletion of your account by email.
+        If possible, use the email address associated with your Beat the Beast account.
+      </p>
+
+      <a class="contact" href="mailto:beatthebeastapp@outlook.com?subject=Beat%20the%20Beast%20%E2%80%93%20Account%20Deletion">
+        beatthebeastapp@outlook.com
+      </a>
+
+      <h3>What data will be deleted?</h3>
+      <p>Account deletion generally removes personal data linked to your account, including:</p>
+      <ul>
+        <li>account data and profile information</li>
+        <li>challenge progress and personal bests</li>
+        <li>social connections such as followers and friendship data</li>
+        <li>uploaded activity evidence</li>
+        <li>other account-related app data</li>
+      </ul>
+
+      <h3>What data may be retained?</h3>
+      <p>
+        Certain information may only be retained where a legal retention obligation or another lawful basis requires it.
+        In that case, the information will be kept only for the necessary period.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="legal-title">
+      <h2 id="legal-title">Rechtliches &amp; aktuelle Challenge</h2>
+      <ul class="legal-links">
+        <li><a href="privacy.html">Datenschutzerklärung / Privacy Policy</a></li>
+        <li><a href="terms.html">Nutzungsbedingungen / Terms of Use</a></li>
+        <li><a href="imprint.html">Impressum / Imprint</a></li>
+        <li><a class="challenge" href="challenge-50-euro.html">50-€-Challenge – Teilnahmebedingungen</a></li>
+      </ul>
+    </section>
+
+    <p class="note">
+      Anbieter / Provider: Carmine Genovese · Goldstraße 85 · 48147 Münster · Deutschland
+    </p>
   </main>
-  <footer>
-    <div class="shell footer-content">
-      <p>© 2026 Beat the Beast · Road to Beast</p>
-      <nav aria-label="Weitere Links" class="footer-links">
-        <a href="https://www.instagram.com/btb_roadtobeast/">Instagram</a>
-        <a href="https://beatthebeast10.github.io/beat-the-beast-account-deletion/privacy.html">Datenschutz</a>
-        <a href="mailto:beatthebeastapp@outlook.com">Kontakt</a>
-      </nav>
-    </div>
-  </footer>
 </body>
 </html>
